@@ -7,7 +7,7 @@ import numpy as np
 import pickle
 import streamlit as st
 
-load_model = open("D:/Softwares/DS/Project/RealEstate/Model/Banglore_Home_Prices_Model.pickle", 'rb')
+load_model = open("D:/Softwares/DS/Project/RealEstate/Model/Banglore_Home_Prices_Model.pkl", 'rb')
 regressor = pickle.load(load_model)
 
 
