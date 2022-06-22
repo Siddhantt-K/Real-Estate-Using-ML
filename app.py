@@ -6,10 +6,11 @@ import pandas as pd
 import numpy as np
 import pickle
 import streamlit as st
+from pathlib import Path
 
-load_model = open("D:/Softwares/DS/Project/RealEstate/Model/Banglore_Home_Prices_Model.pkl", 'rb')
+model_path = Path(__file__).parents[0] / "D:/Softwares/DS/Project/RealEstate/Model/Banglore_Home_Prices_Model.pkl"
+load_model = open(model_path, 'rb')
 regressor = pickle.load(load_model)
-
 
 #dataFrameSerialization = "legacy"
 
