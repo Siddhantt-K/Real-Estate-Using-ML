@@ -20,7 +20,7 @@ regressor = pickle.load(load_model)
 st.title("Home Price Prediction App")
 st.subheader("Please enter below entries to get yourself a suitable house: ")
 
-area = pd.read_json("D:/Softwares/DS/Project/RealEstate/Model/Columns.json")
+area = pd.read_json("Columns.json")
 area1 = area.replace("'","")
 loc = area1["data columns"].tolist()
 #   area2 = list(area1.value_counts().index)
