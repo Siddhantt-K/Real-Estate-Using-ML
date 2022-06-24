@@ -8,7 +8,7 @@ import pickle
 import streamlit as st
 from pathlib import Path
 
-model_path = Path(__file__).parents[0] / "D:/Softwares/DS/Project/RealEstate/Model/Banglore_Home_Prices_Model.pkl"
+model_path = Path.cwd().parents[0] / "Model/Banglore_Home_Prices_Model.pkl"
 load_model = open(model_path, 'rb')
 regressor = pickle.load(load_model)
 
