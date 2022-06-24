@@ -17,7 +17,7 @@ regressor = pickle.load(load_model)
 #@st.cache(suppress_st_warning=True)
 #def main():
 #"""Home Price Prediction"""
-st.title("Home Price Prediction App")
+st.title("Home Price Prediction Web App")
 st.subheader("Please enter below entries to get yourself a suitable house: ")
 
 area = pd.read_json("Columns.json")
